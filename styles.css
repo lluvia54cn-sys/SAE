@@ -253,6 +253,8 @@ svg { display: block; }
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .sidebar .nav-item[data-view="summary"] .sidebar-label { font-size: 0; }
+  .sidebar .nav-item[data-view="summary"] .sidebar-label::after { content: "Resumen"; font-size: 9px; }
   .sidebar .nav-item svg { width: 19px; height: 19px; flex-basis: 19px; }
   .sidebar .nav-item.active { box-shadow: inset 0 2px #d6d6d6; }
   .nav-item--secondary { color: var(--muted); }
@@ -309,6 +311,7 @@ svg { display: block; }
 }
 @media (max-width: 360px) {
   .sidebar .nav-item, .sidebar.collapsed .nav-item { font-size: 0; gap: 0; }
+  .sidebar .nav-item[data-view="summary"] .sidebar-label::after { font-size: 0; }
   .sidebar .nav-item svg { width: 21px; height: 21px; flex-basis: 21px; }
   .record-row { gap: 6px; padding-inline: 12px; }
 }
