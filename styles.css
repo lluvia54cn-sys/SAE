@@ -168,6 +168,10 @@ svg { display: block; }
 .field label { color: #bdbdbd; font-size: 12px; font-weight: 600; }
 .field label small { color: var(--muted-2); font-weight: 400; }
 .field input, .field textarea { width: 100%; border: 1px solid #303030; border-radius: 9px; outline: none; background: #0e0e0e; color: var(--text); padding: 10px 11px; font-size: 13px; transition: border-color .18s, box-shadow .18s; }
+.field input[type="date"] { min-width: 0; max-width: 100%; }
+@supports (-webkit-touch-callout: none) {
+  .field input[type="date"] { width: -webkit-fill-available; }
+}
 .field input { height: 41px; }.field textarea { min-height: 76px; resize: vertical; line-height: 1.45; }
 .field input:focus, .field textarea:focus { border-color: #606060; box-shadow: 0 0 0 3px rgba(255,255,255,.055); }
 .field input.invalid, .field textarea.invalid { border-color: #9d5e60; box-shadow: 0 0 0 3px rgba(205,101,101,.08); }
