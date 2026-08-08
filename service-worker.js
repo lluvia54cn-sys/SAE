@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sae-shell-v1.2.2';
+const CACHE_NAME = 'sae-shell-v1.2.3';
 const APP_SHELL = [
   './',
   './index.html',
