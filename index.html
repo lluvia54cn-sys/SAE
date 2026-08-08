@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>SAE — Sistema de Administración Empresarial</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="splash-mark">
+      <svg viewBox="0 0 64 64">
+        <path class="monogram-s" d="M27 17H16c-5 0-8 3-8 7s3 7 8 7h4c5 0 8 3 8 8s-3 8-8 8H8"/>
+        <path class="monogram-a" d="M23 48 35 16l11 32"/>
+        <path class="monogram-e" d="M49 19h11M49 33h11M49 47h11"/>
+      </svg>
+    </div>
+  </div>
+  <div id="app">
+    <section id="hub" class="hub hub--waiting" aria-labelledby="hub-title">
+      <div class="hub-grid" aria-hidden="true">
+        <svg class="grid-signals" viewBox="0 0 1040 728" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="hub-grid-pattern" width="52" height="52" patternUnits="userSpaceOnUse">
+              <path d="M52 0H0V52" fill="none" stroke="#fff" stroke-opacity=".04" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="1040" height="728" fill="url(#hub-grid-pattern)"/>
+          <g class="signal signal--one">
+            <path class="signal-trail" pathLength="1000" d="M0 156H208V52H468V208H624"/>
+            <circle class="signal-node" r="3"><animateMotion dur="8.5s" repeatCount="indefinite" path="M0 156H208V52H468V208H624"/></circle>
+          </g>
+          <g class="signal signal--two">
+            <path class="signal-trail" pathLength="1000" d="M1040 104H832V260H676V416H520"/>
+            <circle class="signal-node" r="2.6"><animateMotion dur="10.5s" begin="-3s" repeatCount="indefinite" path="M1040 104H832V260H676V416H520"/></circle>
+          </g>
+          <g class="signal signal--three">
+            <path class="signal-trail" pathLength="1000" d="M156 728V572H364V468H572V312"/>
+            <circle class="signal-node" r="2.8"><animateMotion dur="9.2s" begin="-5.5s" repeatCount="indefinite" path="M156 728V572H364V468H572V312"/></circle>
+          </g>
+          <g class="signal signal--four">
+            <path class="signal-trail" pathLength="1000" d="M988 728V624H780V520H936V364"/>
+            <circle class="signal-node" r="2.4"><animateMotion dur="7.8s" begin="-2.2s" repeatCount="indefinite" path="M988 728V624H780V520H936V364"/></circle>
+          </g>
+          <g class="signal signal--five">
+            <path class="signal-trail" pathLength="1000" d="M0 416H104V312H260V364H416"/>
+            <circle class="signal-node" r="2.4"><animateMotion dur="11s" begin="-7s" repeatCount="indefinite" path="M0 416H104V312H260V364H416"/></circle>
+          </g>
+          <g class="signal signal--six">
+            <path class="signal-trail" pathLength="1000" d="M728 0V156H624V260H780V312H1040"/>
+            <circle class="signal-node" r="2.8"><animateMotion dur="9.8s" begin="-4s" repeatCount="indefinite" path="M728 0V156H624V260H780V312H1040"/></circle>
+          </g>
+          <g class="grid-junctions">
+            <circle cx="208" cy="156" r="1.6"/><circle cx="468" cy="52" r="1.6"/><circle cx="832" cy="104" r="1.6"/><circle cx="676" cy="260" r="1.6"/>
+            <circle cx="364" cy="572" r="1.6"/><circle cx="572" cy="468" r="1.6"/><circle cx="780" cy="624" r="1.6"/><circle cx="936" cy="520" r="1.6"/>
+          </g>
+        </svg>
+      </div>
+      <header class="hub-header">
+        <div class="brand-mark brand-mark--large" aria-label="Logotipo SAE">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M27 17H16c-5 0-8 3-8 7s3 7 8 7h4c5 0 8 3 8 8s-3 8-8 8H8"/>
+            <path d="M23 48 35 16l11 32"/>
+            <path d="M49 19h11M49 33h11M49 47h11"/>
+          </svg>
+        </div>
+        <h1 id="hub-title">Sistema de Administración Empresarial</h1>
+      </header>
+
+      <main class="hub-content">
+        <div class="hub-copy">
+          <span class="eyebrow">Negocios</span>
+          <h2>Elige un entorno de trabajo</h2>
+          <p>Tus registros permanecen organizados de forma independiente en cada negocio.</p>
+        </div>
+        <article class="business-card">
+          <div class="business-art" aria-hidden="true">
+            <svg viewBox="0 0 360 190">
+              <defs>
+                <linearGradient id="machine-body" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+                  <stop offset="1" stop-color="#fff" stop-opacity=".025"/>
+                </linearGradient>
+              </defs>
+              <path d="M48 157h264M68 33v124M292 33v124" stroke="#fff" stroke-opacity=".07"/>
+              <path d="M87 33h186v124H87Z" fill="url(#machine-body)" stroke="#fff" stroke-opacity=".25"/>
+              <path d="M99 45h162v36H99Z" fill="#090909" stroke="#fff" stroke-opacity=".2"/>
+              <path d="M113 57h42M113 68h26" stroke="#fff" stroke-opacity=".42" stroke-linecap="round"/>
+              <circle cx="238" cy="63" r="7" fill="none" stroke="#fff" stroke-opacity=".5"/><path d="m235 63 2 2 4-5" fill="none" stroke="#fff" stroke-opacity=".55" stroke-linecap="round"/>
+              <path d="M87 92h186M121 92v29M180 92v29M239 92v29" stroke="#fff" stroke-opacity=".17"/>
+              <path d="M113 105h16v8h-5v11M172 105h16v8h-5v11M231 105h16v8h-5v11" fill="none" stroke="#fff" stroke-opacity=".55" stroke-linejoin="round"/>
+              <path d="M183 123v7" stroke="#fff" stroke-opacity=".8" stroke-linecap="round"/>
+              <path d="M176 131h14l4 23h-22Z" fill="#0a0a0a" stroke="#fff" stroke-opacity=".45"/><path d="M179 131v-6h8v6" fill="none" stroke="#fff" stroke-opacity=".45"/>
+              <path d="M285 62c0 9-10 14-10 23a10 10 0 0 0 20 0c0-9-10-14-10-23Z" fill="none" stroke="#fff" stroke-opacity=".32"/>
+              <circle cx="124" cy="128" r="2" fill="#fff" fill-opacity=".34"/><circle cx="242" cy="128" r="2" fill="#fff" fill-opacity=".34"/>
+            </svg>
+          </div>
+          <div class="business-card__body">
+            <div>
+              <span class="business-type">Negocio</span>
+              <h3>Vending de limpieza</h3>
+            </div>
+            <button class="button button--primary" id="enter-business" type="button">
+              Entrar
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </article>
+      </main>
+      <footer class="hub-footer">SAE <span id="year"></span> · Datos guardados en este navegador</footer>
+    </section>
+
+    <section id="workspace" class="workspace is-hidden" aria-label="Vending de limpieza">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div class="sidebar-brand">
+            <div class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M27 17H16c-5 0-8 3-8 7s3 7 8 7h4c5 0 8 3 8 8s-3 8-8 8H8"/><path d="M23 48 35 16l11 32"/><path d="M49 19h11M49 33h11M49 47h11"/></svg>
+            </div>
+            <span class="sidebar-label brand-name">Sistema empresarial</span>
+          </div>
+          <button class="icon-button sidebar-toggle" id="sidebar-toggle" type="button" aria-label="Contraer barra lateral" title="Contraer barra lateral">
+            <svg viewBox="0 0 24 24"><path d="m14 18-6-6 6-6"/></svg>
+          </button>
+        </div>
+        <div class="business-identity">
+          <span class="business-dot"></span>
+          <span class="sidebar-label">Vending de limpieza</span>
+        </div>
+        <nav class="main-nav" aria-label="Secciones principales">
+          <button class="nav-item active" type="button" data-view="summary" title="Resumen financiero">
+            <svg viewBox="0 0 24 24"><path d="M4 19V9m8 10V5m8 14v-7"/><path d="M2 19h20"/></svg>
+            <span class="sidebar-label">Resumen financiero</span>
+          </button>
+          <button class="nav-item" type="button" data-view="sales" title="Ventas">
+            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h4"/></svg>
+            <span class="sidebar-label">Ventas</span>
+          </button>
+          <button class="nav-item" type="button" data-view="expenses" title="Gastos">
+            <svg viewBox="0 0 24 24"><path d="M12 3v18m5-14H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span class="sidebar-label">Gastos</span>
+          </button>
+        </nav>
+        <div class="sidebar-bottom">
+          <button class="nav-item nav-item--secondary" type="button" data-view="settings" title="Ajustes del negocio">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21h-4v-.09A1.7 1.7 0 0 0 8.5 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3v-4h.09A1.7 1.7 0 0 0 4.6 8.5a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3h4v.09A1.7 1.7 0 0 0 15.5 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9c.13.39.34.73.6 1 .3.3.7.43 1.1.4h.09v4h-.09A1.7 1.7 0 0 0 19.4 15Z"/></svg>
+            <span class="sidebar-label">Ajustes</span>
+          </button>
+          <button class="nav-item nav-item--secondary" id="exit-business" type="button" title="Volver al hub">
+            <svg viewBox="0 0 24 24"><path d="M10 17l-5-5 5-5M5 12h12"/><path d="M14 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5"/></svg>
+            <span class="sidebar-label">Volver al hub</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="content-header">
+          <div>
+            <span class="eyebrow" id="view-eyebrow">Vending de limpieza</span>
+            <h1 id="view-title">Resumen financiero</h1>
+          </div>
+          <div class="month-selector" id="month-selector">
+            <button class="icon-button" id="month-prev" type="button" aria-label="Mes anterior" title="Mes anterior"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="month-display">
+              <span id="month-label"></span>
+              <small id="month-state"></small>
+            </div>
+            <button class="icon-button" id="month-next" type="button" aria-label="Mes siguiente" title="Mes siguiente"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+          </div>
+        </header>
+        <div id="view-container" class="view-container" aria-live="polite"></div>
+      </main>
+    </section>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite"></div>
+
+  <div class="modal-backdrop is-hidden" id="confirm-modal" role="presentation">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-message">
+      <div class="modal-icon modal-icon--danger"><svg viewBox="0 0 24 24"><path d="M12 9v4m0 4h.01"/><path d="M10.3 3.8 2.5 17.2A2 2 0 0 0 4.2 20h15.6a2 2 0 0 0 1.7-2.8L13.7 3.8a2 2 0 0 0-3.4 0Z"/></svg></div>
+      <h2 id="confirm-title">Eliminar registro</h2>
+      <p id="confirm-message">¿Seguro que quieres eliminar este registro?</p>
+      <div class="modal-actions">
+        <button class="button button--ghost" id="confirm-cancel" type="button">Cancelar</button>
+        <button class="button button--danger" id="confirm-accept" type="button">Eliminar</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
