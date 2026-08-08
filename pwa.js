@@ -5,13 +5,15 @@
 
   const notice = document.querySelector('#update-notice');
   const updateButton = document.querySelector('#update-app');
+  const dismissButton = document.querySelector('#dismiss-update');
   let waitingWorker = null;
   let updateRequested = false;
+  let noticeDismissed = false;
   let registration = null;
 
   function offerUpdate(worker) {
     waitingWorker = worker;
-    notice.classList.remove('is-hidden');
+    if (!noticeDismissed) notice.classList.remove('is-hidden');
   }
 
   function watchInstallingWorker(worker) {
@@ -46,6 +48,11 @@
     updateRequested = true;
     updateButton.disabled = true;
     waitingWorker.postMessage({ type: 'SKIP_WAITING' });
+  });
+
+  dismissButton.addEventListener('click', () => {
+    noticeDismissed = true;
+    notice.classList.add('is-hidden');
   });
 
   navigator.serviceWorker.addEventListener('controllerchange', () => {

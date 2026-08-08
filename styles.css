@@ -33,6 +33,9 @@ svg { display: block; }
 
 .update-notice { position: fixed; z-index: 900; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 14px; max-width: calc(100vw - 36px); padding: 10px 10px 10px 15px; border: 1px solid #343434; border-radius: 12px; background: #141414; box-shadow: 0 16px 42px rgba(0,0,0,.5); color: var(--text); font-size: 12px; font-weight: 600; }
 .update-notice .update-notice__button { min-height: 34px; padding: 0 13px; font-size: 12px; }
+.update-notice__close { width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--muted); cursor: pointer; }
+.update-notice__close:hover { background: var(--surface-3); color: var(--text); }
+.update-notice__close svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
 
 @media (max-width: 480px) {
   .update-notice { right: max(12px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); left: max(12px, env(safe-area-inset-left)); justify-content: space-between; max-width: none; }
